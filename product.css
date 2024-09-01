@@ -1,0 +1,175 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+
+}
+
+/*body{
+	font-family: ;
+	background-color: hsl(30, 38%, 92%);
+	font-size: 14px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}*/
+
+	body {
+   font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Adjust the flex direction */
+    justify-content: center;
+    align-items: center;
+}
+
+/*.container{
+	margin: 30px auto;
+	padding: 0 30px;	
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	display: block;
+
+
+}*/
+
+
+
+.container {
+    margin: 30px auto;
+    padding: 0 30px;    
+    max-width: 700px; /* Adjust max-width to prevent overflow */
+    display: block;
+}
+
+
+
+.grid{
+	max-width: 700px;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	background-color: #FFF;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.img img{
+	max-width: 100%;
+	display: inherit;
+}
+
+.card-content{
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pro-cat{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 13px;
+	color: hsl(228, 12%, 48%);
+	font-weight: 500;
+}
+
+.pro-name{
+	 font-family: "Fraunces", serif;
+	font-size: 34px;
+	line-height: 1em;
+	color: hsl(212, 21%, 14%);
+}
+
+.pro-des{
+	color: hsl(228, 12%, 48%);
+	line-height: 1.6em;
+	font-family: "Montserrat", sans-serif;
+}
+
+.current-price{
+	 font-family: "Fraunces", serif;
+	color: hsl(158, 36%, 37%);
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.old-price{
+	font-family: "Montserrat", sans-serif;
+	color: hsl(158, 36%, 37%);
+	text-decoration: line-through;
+	padding-left: 30px;
+}
+
+.price{
+	display: flex;
+	align-items: center;
+}
+
+.cta{
+	background-color: hsl(158, 36%, 37%);
+	border: none;
+	border-radius: 1rem ;
+	padding: 12px 0;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background-color .3s ease;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+}
+.cta:hover{
+	background-color: hsl(158, 36%, 23%) ;
+}
+
+.cta img{
+	padding-right: 7px;
+}
+
+
+@media only screen and (max-width:568px){
+	.grid{
+		grid-template-columns: 1fr;
+	}
+
+	.img img {
+		max-height: 400px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.card-content{
+		display: block;
+
+	}
+
+/*	.pro-cat,.pro-name,.pro-des,.price{*/
+		padding-bottom: 23px;
+	}
+
+
+}
+
+
+
+/*.attribution{
+	font-size: 11px;
+	text-align: center;
+
+}*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px; /* Add margin to create space between the container and attribution */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
